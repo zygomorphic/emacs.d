@@ -8,6 +8,7 @@
 ;;(global-hl-line-highlight t)
 
 (delete-selection-mode t)
+(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 

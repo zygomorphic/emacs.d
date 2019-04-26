@@ -3,4 +3,8 @@
 					    ("8aa" "aaaa aaa aaaa")
 					    ))
 
+(require 'ibuffer)  
+
+
+
 (provide 'init-buffer-mode)

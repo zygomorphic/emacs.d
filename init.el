@@ -5,6 +5,10 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 
+;;设置初始目录为rails项目目录  
+;;(setq default-directory "d:\\rails")
+
+
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'init-packages)
 (require 'init-ui)
