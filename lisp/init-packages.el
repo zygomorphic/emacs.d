@@ -29,7 +29,8 @@
 		       smartparens
 		       js2-mode
 		       nodejs-repl
-;;		       popwin
+		       ;;		       popwin
+		       color-theme-solarized		       
 		       ) "Default packages")
 
  (setq package-selected-packages my/packages)

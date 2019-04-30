@@ -14,7 +14,7 @@
 
 ;;系统剪贴板快捷键（C-c C-c复制，C-v粘贴）  
 (global-set-key "\C-c\C-c" 'clipboard-kill-ring-save)  
-(global-set-key "\C-v" 'clipboard-yank)
+(global-set-key "\C-c\C-v" 'clipboard-yank)
 ;;允许使用C-z作为命令前缀  
 (define-prefix-command 'ctl-z-map)  
 (global-set-key (kbd "C-z") 'ctl-z-map)

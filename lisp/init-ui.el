@@ -1,7 +1,11 @@
 ;; 基本配置
-(set-default-font "Lucida Console-14")
+(set-default-font "Monaco-14")
+
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
-(load-theme 'monokai 1)
+;;(load-theme 'monokai 1)
+(load-theme 'solarized t)
+(set-frame-parameter nil 'background-mode 'dark)
+(enable-theme 'solarized)
 ;; 关闭图标状态栏
 (tool-bar-mode -1)
 ;; 关闭滚动条

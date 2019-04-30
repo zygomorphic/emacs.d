@@ -1,4 +1,4 @@
-(define-package "org-pomodoro" "20171108.2114" "Pomodoro implementation for org-mode."
+(define-package "org-pomodoro" "20190426.2113" "Pomodoro implementation for org-mode."
   '((alert "0.5.10")
     (cl-lib "0.5"))
   :authors
