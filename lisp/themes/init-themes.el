@@ -1,11 +1,11 @@
 ;; 基本配置
-(set-default-font "Monaco-14")
+(set-default-font "Cascadia code-12")
 
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 ;;(load-theme 'monokai 1)
-(load-theme 'solarized t)
+;; (load-theme 'solarized t)
 (set-frame-parameter nil 'background-mode 'dark)
-(enable-theme 'solarized)
+;; (enable-theme 'solarized)
 ;; 关闭图标状态栏
 (tool-bar-mode -1)
 ;; 关闭滚动条
@@ -18,5 +18,4 @@
 (setq-default cursor-type 'bar)
 
 (global-hl-line-mode t)
-
-(provide 'init-ui)
+(provide 'init-themes)

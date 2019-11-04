@@ -8,10 +8,11 @@
 ;;设置初始目录为rails项目目录  
 ;;(setq default-directory "d:\\rails")
 
-
-(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/lisp/core")
+(add-to-list 'load-path "~/.emacs.d/lisp/setting")
+(add-to-list 'load-path "~/.emacs.d/lisp/themes")
 (require 'init-packages)
-(require 'init-ui)
+(require 'init-themes)
 (require 'init-default-buffer)
 (require 'init-buffer-mode)
 (require 'init-keybindings)
@@ -20,5 +21,5 @@
 (require 'init-org)
 
 
-(setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
+(setq custom-file (expand-file-name "lisp/themes/custom.el" user-emacs-directory))
 (load-file custom-file)
