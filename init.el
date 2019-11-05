@@ -11,6 +11,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/core")
 (add-to-list 'load-path "~/.emacs.d/lisp/setting")
 (add-to-list 'load-path "~/.emacs.d/lisp/themes")
+(add-to-list 'load-path "~/.emacs.d/github/neotree")
 (require 'init-packages)
 (require 'init-themes)
 (require 'init-default-buffer)
@@ -18,6 +19,7 @@
 (require 'init-keybindings)
 (require 'init-major-mode)
 (require 'init-rust)
+(require 'neotree)
 (require 'init-org)
 
 

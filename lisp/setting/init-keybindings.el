@@ -19,6 +19,8 @@
 (define-prefix-command 'ctl-z-map)  
 (global-set-key (kbd "C-z") 'ctl-z-map)
 
+;;neotree目录树快捷键
+(global-set-key [f8] 'neotree-toggle)
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
