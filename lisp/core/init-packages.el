@@ -7,18 +7,20 @@
 
 ;; Add Packages
  (defvar my/packages '(
-		       company
 		       hungry-delete
+			   rainbow-delimiters
 		       monokai-theme
 		       window-numbering
 		       web-mode
 		       toml-mode
-		       rust-mode
-		       racer
 		       org
 		       org-pomodoro
 		       org-agenda-property
 		       markdown-mode
+		       company
+		       rust-mode
+		       racer
+			   company-racer
 		       cargo
 		       flycheck
 		       flycheck-rust
@@ -52,17 +54,21 @@
 (setq recentf-max-menu-items 25)
 (require 'hungry-delete)
 (global-hungry-delete-mode t)
+(global-flycheck-mode)
 ;; 配置 swiper
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 ;; 括号匹配
-;;(smartparens-global-mode t)
+(smartparens-global-mode t)
 (require 'smartparens-config)
 (add-hook 'emacs-lisp-mode-hook #'smartparens-mode)
 (add-hook 'rust-mode-hook #'smartparens-mode)
 (add-hook 'js2-mode-hook #'smartparens-mode)
 (add-hook 'shell-script-mode-hook #'smartparens-mode)
+(add-hook 'foo-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;; 文件末尾
 (provide 'init-packages)

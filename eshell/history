@@ -1,0 +1,4 @@
+ls
+ls
+pacman -Syyu
+sudo pacman -Syyu

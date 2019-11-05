@@ -25,6 +25,9 @@
      ("#F309DF" . 85)
      ("#3C3D37" . 100))))
  '(magit-diff-use-overlays nil)
+ '(package-selected-packages
+   (quote
+    (electric-spacing company hungry-delete monokai-theme window-numbering web-mode toml-mode org org-pomodoro org-agenda-property markdown-mode rust-mode racer company-racer cargo flycheck flycheck-rust w3m git-commit swiper counsel smartparens js2-mode nodejs-repl color-theme-solarized)))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
  '(vc-annotate-background nil)

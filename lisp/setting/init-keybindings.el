@@ -21,6 +21,12 @@
 
 ;;neotree目录树快捷键
 (global-set-key [f8] 'neotree-toggle)
+(global-set-key [f12] 'shell)
+
+;; rust相关快捷键
+(global-set-key [f9] 'rust-format-buffer)
+(global-set-key [f6] 'cargo-process-run)
+(global-set-key [f5] 'cargo-process-test)
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
