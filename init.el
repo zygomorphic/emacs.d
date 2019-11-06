@@ -13,6 +13,8 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/themes")
 (add-to-list 'load-path "~/.emacs.d/github/neotree")
 
+
+
 (require 'init-packages)
 (require 'init-themes)
 (require 'init-default-buffer)
@@ -23,7 +25,9 @@
 (require 'neotree)
 (require 'init-org)
 (require 'rainbow-delimiters)
+(require 'init-function)
 
 
 (setq custom-file (expand-file-name "lisp/themes/custom.el" user-emacs-directory))
 (load-file custom-file)
+(put 'upcase-region 'disabled nil)
